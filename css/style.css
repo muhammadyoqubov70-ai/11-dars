@@ -228,6 +228,34 @@ main {
   width: 120px;
   height: 120px;
 }
+.main__kamin {
+  justify-content: center;
+
+  display: flex;
+  align-items: center;
+  gap: 88px;
+  h2 {
+    padding-bottom: 14px;
+    font-size: 2.4rem;
+    color: var(--title-color);
+  }
+  p {
+    font-size: 1.6rem;
+    color: var(--text-color-light);
+    padding-bottom: 44px;
+  }
+}
+.main__kamin__button {
+  padding: 20px 40px;
+  border-radius: 64px;
+  color: var(--body-color);
+  background-color: var(--first-color);
+  border: none;
+}
+.main__kamin__button:hover {
+  transform: scale(1.1);
+  transition: 0.3s linear;
+}
 
 @media (max-width: 768px) {
   .main__information {
@@ -243,6 +271,13 @@ main {
   }
   .nav___ico {
     display: inline-block;
+  }
+
+  .main__kamin {
+    padding-left: 30px;
+    p {
+      display: none;
+    }
   }
 }
 
@@ -275,8 +310,16 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0px;
+    margin-top: 30px;
   }
   .main__hero_ {
     flex-direction: row;
+  }
+}
+@media (max-width: 450px) {
+  .main__kamin {
+    display: flex;
+    flex-direction: column;
+    padding-top: 400px;
   }
 }
