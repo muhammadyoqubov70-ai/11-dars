@@ -381,6 +381,55 @@ main {
   color: var(--title-color);
   display: none;
 }
+.main__massege {
+  margin-top: 90px;
+  margin-bottom: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--first-color);
+  border-radius: 32px;
+  gap: 65px;
+}
+.main__massege_text {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 3.6rem;
+    padding-bottom: 24px;
+    color: var(--container-color);
+  }
+}
+.title {
+  padding-top: 60px;
+  text-align: center;
+}
+.main__massege_input {
+  padding: 18px;
+  padding-left: 24px;
+  padding-right: 110px;
+  border-radius: 64px;
+  outline: none;
+  border: none;
+  margin-bottom: 13px;
+}
+.main__massege_button {
+  width: 175px;
+  padding: 16px;
+  border-radius: 64px;
+  border: none;
+  color: var(--container-color);
+  background-color: var(--title-color);
+  margin-bottom: 49px;
+  transition: 0.3s linear;
+}
+.main__massege_button:hover {
+  transform: scale(1.1);
+  transition: 0.3s linear;
+  background-color: var(--text-color);
+}
 @media (max-width: 768px) {
   .main__information {
     display: flex;
@@ -496,5 +545,11 @@ main {
   }
   .text {
     display: inline-block;
+  }
+  .main__massege {
+    margin-top: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
   }
 }
