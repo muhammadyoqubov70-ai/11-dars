@@ -118,6 +118,7 @@ a {
 }
 
 body {
+  background-color: var(--body-color);
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -203,6 +204,7 @@ main {
   h2 {
     font-size: 2.4rem;
     line-height: 100%;
+    font-weight: 600;
   }
 }
 .main__hero_ {
@@ -256,7 +258,113 @@ main {
   transform: scale(1.1);
   transition: 0.3s linear;
 }
+.kart__hero_img {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.main__kart_text {
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 100%;
+  font-weight: 500;
 
+  transition: 0.3s linear;
+}
+
+.main__kart {
+  border: 1px solid rgba(102, 99, 99, 0.1);
+  position: relative;
+  padding: 24px;
+  width: 200px;
+  height: 247px;
+  border-radius: 12px;
+  background-color: var(--container-color);
+  transform: translateY(7px);
+  transition: 0.3s ease;
+  h2 {
+    font-size: 2rem;
+    color: var(--title-color);
+    font-weight: 600;
+    line-height: 100%;
+  }
+  p {
+    line-height: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+}
+
+.main__kart:hover {
+  box-shadow: -1px 31px 12px 0px rgba(34, 60, 80, 0.2);
+  transition: 0.3s linear;
+  transform: translateY(-13px);
+}
+.kart__hero_img {
+  width: 120px;
+  height: 120px;
+}
+.kart__icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.main__karts {
+  width:;
+  padding-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+.scrool {
+  margin-top: 100px;
+}
+.main__scrool_text {
+  padding-bottom: 64px;
+  padding-top: 72px;
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--title-color);
+}
+.main__scrool_hero {
+  width: 230px;
+  height: 328px;
+  box-shadow: 4px 3px 35px 10px rgba(34, 60, 80, 0.2);
+  border-radius: 12px;
+  outline: hidden;
+  p {
+    font-size: 2rem;
+    color: var(--title-color);
+    text-align: center;
+    font-weight: 600;
+  }
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color-light);
+  }
+}
+.main__scrool {
+  position: relative;
+}
+.top_img {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+.scrool__bottom {
+  position: absolute;
+  left: 84%;
+}
+.best {
+  display: flex;
+  flex-direction: row;
+}
 @media (max-width: 768px) {
   .main__information {
     display: flex;
@@ -320,6 +428,32 @@ main {
   .main__kamin {
     display: flex;
     flex-direction: column;
-    padding-top: 400px;
+    padding-top: 440px;
+    padding-left: 0px;
+    gap: 0px;
+
+    h2 {
+      text-align: center;
+    }
+    p {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  .main__kamin__button {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .main__kamin_img {
+    width: 280px;
+  }
+
+  .main__kart_text {
+    padding-top: 500px;
+  }
+
+  .main__karts {
+    display: flex;
   }
 }
