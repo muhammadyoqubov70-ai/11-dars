@@ -320,9 +320,7 @@ main {
   gap: 40px;
   justify-content: center;
 }
-.scrool {
-  margin-top: 100px;
-}
+
 .main__scrool_text {
   padding-bottom: 64px;
   padding-top: 72px;
@@ -330,40 +328,30 @@ main {
   font-size: 2.4rem;
   color: var(--title-color);
 }
-.main__scrool_hero {
+
+.main__best {
   width: 230px;
-  height: 328px;
-  box-shadow: 4px 3px 35px 10px rgba(34, 60, 80, 0.2);
+  height: 278px;
+  position: relative;
+  border: 1px solid gray;
   border-radius: 12px;
-  outline: hidden;
+
   p {
-    font-size: 2rem;
-    color: var(--title-color);
     text-align: center;
+    font-size: 2rem;
     font-weight: 600;
   }
-  h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--text-color-light);
-  }
 }
-.main__scrool {
-  position: relative;
-}
-.top_img {
+.main__bottom_img {
   position: absolute;
-  top: 15px;
-  left: 40px;
+  top: 14px;
+  right: 40px;
 }
-.scrool__bottom {
+.main_best_bottom {
   position: absolute;
-  left: 84%;
-}
-.best {
-  display: flex;
-  flex-direction: row;
+  left: 195px;
+  bottom: 0px;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .main__information {
