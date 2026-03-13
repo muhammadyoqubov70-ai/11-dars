@@ -1,0 +1,282 @@
+/* poppins-200italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 200;
+  src: url("../fonts/poppins-v24-latin-200italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v24-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/poppins-v24-latin-300italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/poppins-v24-latin-600italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/poppins-v24-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/poppins-v24-latin-800italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --first-color-alt: #d42b39;
+  --first-color: #dc3845;
+  --title-color: #282525;
+  --text-color: #5d5656;
+  --text-color-light: #918889;
+  --body-color: #ffffff;
+  --container-color: #ffffff;
+}
+.dark-mode {
+  --first-color-alt: #d42b39;
+  --first-color: #db4d59;
+  --title-color: #f3f2f2;
+  --text-color: #c2bdbd;
+  --text-color-light: #918889;
+  --body-color: #251819;
+  --container-color: #2f2223;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-size: 1.6rem;
+}
+span {
+  font-size: 1.6rem;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+button {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+.nav-div {
+  padding: 24px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    color: var(--title-color);
+  }
+}
+.nav-f {
+  display: flex;
+  gap: 48px;
+}
+.nav-div:hover a {
+  color: var(--first-color-alt);
+}
+.box__logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--title-color);
+}
+.box__img {
+  width: 24px;
+  height: 24px;
+}
+.main__information {
+  justify-content: center;
+  padding-top: 64px;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.main__text__ {
+  h2 {
+    font-size: 4rem;
+    color: var(--title-color);
+    padding-bottom: 16px;
+  }
+}
+
+.main__text_p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  padding-bottom: 48px;
+}
+.nav__ico {
+  display: none;
+}
+.main__img {
+}
+.main__button {
+  padding: 20px 56px;
+  border-radius: 64px;
+  color: var(--container-color);
+  background-color: var(--first-color);
+  border: none;
+  font-size: 1.6rem;
+  line-height: 100%;
+}
+.main__button:hover {
+  transform: scale(1.1);
+  transition: 0.3s linear;
+}
+.main__button:hover {
+  background-color: var(--first-color-alt);
+  color: #c2bdbd;
+}
+.main__text {
+  padding-top: 72px;
+  text-align: center;
+  padding-bottom: 64px;
+  h2 {
+    font-size: 2.4rem;
+    line-height: 100%;
+  }
+}
+.main__hero_ {
+}
+.main__hero {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 139px;
+
+  h3 {
+    padding-top: 12px;
+    padding-bottom: 4px;
+    font-size: 2rem;
+    color: var(--text-color);
+  }
+  p {
+    font-size: 1.4rem;
+    color: var(--text-color-light);
+  }
+}
+.main__img_hero {
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 768px) {
+  .main__information {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .main__text_p {
+    padding: 0px;
+  }
+  .nav-f {
+    display: none;
+  }
+  .nav___ico {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 450px) {
+  .main__information {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .nav-f {
+    display: none;
+  }
+  .nav___ico {
+    display: inline-block;
+  }
+  .main__button {
+    margin: 0 auto;
+    margin-left: 23%;
+  }
+  .main__img {
+    width: 100%;
+  }
+  .main__hero {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .main__hero_ {
+    flex-direction: row;
+  }
+}
